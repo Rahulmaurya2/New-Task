@@ -1,0 +1,249 @@
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+img {
+  overflow: clip;
+  width: 60vw;
+}
+
+.header__logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.header__logo {
+  width: 60vw;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 40%;
+  text-emphasis-style: normal;
+}
+li {
+  display: list-item;
+  color: black;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+input {
+  cursor: pointer;
+  background-color: field;
+  margin: 0em;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  padding-block: 1px;
+  padding-inline: 2px;
+  margin: 5%;
+  width: 100%;
+  height: 30%;
+}
+.form__email {
+  padding: 10;
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+.container__features {
+  margin-top: 6%;
+  margin-left: 20%;
+  margin-right: 25%;
+}
+.container__grid {
+  display: flex;
+}
+
+.container__icon {
+  margin-right: 10%;
+  margin-left: 5%;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.container_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+.container__video {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container__video > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+.container__pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 20%;
+  margin-right: 25%;
+}
+
+.product {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  text-align: left;
+  padding-bottom: 3%;
+}
+.level {
+  text-align: center;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer {
+  display: block;
+  margin-left: 20%;
+  margin-right: 25%;
+}
+ul {
+  list-style-type: disc;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  text-align: right;
+  margin-right: 10%;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+  margin-right: 1%;
+}
+
+.container__icon {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  margin-top: 3%;
+}
+
+.footer__list {
+  display: flex;
+  margin-left: 77%;
+  column-gap: 10%;
+}
