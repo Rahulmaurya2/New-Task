@@ -3,18 +3,13 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-* {
-  padding: 0;
-  box-sizing: border-box;
-}
-
 header {
   position: fixed;
   top: 0;
   min-height: 75px;
   padding: 0px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   background-color: #eee;
 }
@@ -39,7 +34,7 @@ img {
   width: 60vw;
 }
 
-ul {
+/* ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -47,16 +42,22 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
-}
+} */
 
 nav > ul {
   width: 35vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-right: 40%;
-  text-emphasis-style: normal;
+  padding-right: 20%;
+  /* text-emphasis-style: normal; */
+  column-gap: 5%;
 }
+
+.header__nev {
+  margin-right: 15%;
+}
+
 li {
   display: list-item;
   color: black;
@@ -67,7 +68,7 @@ a {
   font-style: normal;
 }
 
-.inputBox {
+.inputbox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,26 +205,24 @@ h2 {
 }
 
 footer {
+  position: relative;
   margin-top: 30px;
   background-color: #ddd;
   padding: 20px;
-}
-
-footer {
-  display: block;
   margin-left: 20%;
   margin-right: 25%;
 }
+
 ul {
   list-style-type: disc;
   list-style: none;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 50px;
+  margin-inline-end: 50p;
   padding-inline-start: 40px;
   text-align: right;
-  margin-right: 10%;
+  margin-right: 2%;
 }
 
 footer > span {
@@ -232,7 +231,7 @@ footer > span {
   justify-content: flex-end;
   font-size: 0.9em;
   color: #444;
-  margin-right: 1%;
+  margin-right: 2%;
 }
 
 .container__icon {
@@ -244,6 +243,7 @@ footer > span {
 
 .footer__list {
   display: flex;
-  margin-left: 77%;
+  margin-left: 70%;
   column-gap: 10%;
+  justify-content: end;
 }
