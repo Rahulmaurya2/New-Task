@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   min-height: 75px;
   padding: 0px 20px;
@@ -14,9 +14,21 @@ header {
   background-color: #eee;
 }
 
+@media (max-width: 660px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
 img {
   overflow: clip;
   width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .header__logo > img {
+    margin: 0 auto;
+  }
 }
 
 .header__logo > img {
@@ -56,6 +68,18 @@ nav > ul {
 
 .header__nev {
   margin-right: 15%;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
 }
 
 li {
@@ -120,6 +144,14 @@ input {
   display: flex;
 }
 
+@media (max-width: 550px) {
+  .container__features {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
 .container__icon {
   margin-right: 10%;
   margin-left: 5%;
@@ -169,8 +201,14 @@ h2 {
   justify-content: center;
   margin-left: 20%;
   margin-right: 25%;
+  padding: -20%;
 }
 
+@media (max-width: 800px) {
+  .container__pricing {
+    flex-direction: column;
+  }
+}
 .product {
   display: flex;
 
@@ -195,6 +233,15 @@ h2 {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
 
 .product > button {
